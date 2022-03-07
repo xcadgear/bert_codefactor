@@ -154,7 +154,7 @@ module BERT
     def read_binary_64
       fail("Invalid Type, not a IEEE 754 binary64") unless read_1 == IEEE_754_BINARY_64
       string_value = read_string(8)
-      result = string_value.unpack("G")
+      #result = string_value.unpack("G")
     end
 
     def read_small_tuple
